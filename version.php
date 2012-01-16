@@ -25,6 +25,7 @@
 
 
 $module->version  = 2012011000;  // The current module version (Date: YYYYMMDDXX)
+$module->requires = 2007101506;
 $module->cron     = 900;           // Period for cron to check this module (secs)
 
 ?>
