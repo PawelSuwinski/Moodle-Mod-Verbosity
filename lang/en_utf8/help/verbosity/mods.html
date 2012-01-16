@@ -1,0 +1,16 @@
+<p><img alt="" src="<?php echo $CFG->wwwroot?>/mod/verbosity/icon.gif" />&nbsp;<b>Verbosity</b></p>
+<div class="indent">
+
+  <p>
+     The module counts amount of forum posts for each user in chosen forums and
+     put it into gradebook as a grade. On every update maxgrade value of grade
+     item and all single grades are set to current maximum so grades could be
+     normalized.  In percentage grade format the most active forum user get the
+     highest grade (100%).
+</p>
+<p>
+     Update is processed  as cron job and on every access to instance view page
+     when total amount of forum posts differs since last update.
+  </p>
+
+</div>
