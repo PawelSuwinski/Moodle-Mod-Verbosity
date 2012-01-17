@@ -87,7 +87,9 @@ class mod_verbosity_mod_form extends moodleform_mod {
         parent::definition_after_data();
 
          $mform =& $this->_form;
-         $forumid=array_shift($mform->getElement('forumid')->getSelected());
+         $forumid = $mform->getElement('forumid')->getSelected() ? 
+            array_shift($mform->getElement('forumid')->getSelected()) :
+            0 ;
 
          if($forumid == 0) {
             return;
